@@ -33,11 +33,16 @@ Developer @GA in NYC
 body {
 	color: #d3d3d3;
 	line-height: 1.5;
-	font-family: Helvetica, Arial, sans-serif;
-}
+	font-family: 'Open Sans', sans-serif;
+	}
 
+div {
+	border: 0 solid black;
+	padding: 1px;
+
+}
 * {
-	font-family:  'Open Sans', sans-serif;
+	text-decoration: none;	
 }
 
 /******************************************
@@ -52,20 +57,27 @@ body {
 
 }
 
-div {
-	border: 0 solid black;
-	padding: 1px;
+.column {
+	float: left;
+	margin-right: 2%;
+	background-color: #f0efef;
+	padding: 20px;
 
 }
 
-footer {
-	height: 200px;
-	background-color: #121212;
-	margin: 0 auto;
-	width: 1024px;
-	max-width: 90%;
-	text-align: center
+.column:last-child {
+	margin-right: 0;
 }
+
+.two-columns.has-sidebar .column:first-child {
+	width: 61%;
+}
+
+.two-columns.has-sidebar .column:last-child {
+	width: 36%;
+}
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
@@ -82,56 +94,57 @@ footer {
 
 .benefits {
 	background-color: #f0efef;
-	height: 300px;
+	padding: 30px;
 	margin: 0 auto;
 	width: 1024px;
 	max-width: 90%;
 
 }
 .testimonial {
-	background-color: #f0efef;
-	height: 270px;
 	background: url("../images/testimonial_bg.jpg") no-repeat center top rgb(134,141,157);
 	background-size: cover;
-	margin: 0 auto;
+	padding: 90px;
 	width: 1024px;
+	margin: 0 auto;
 	max-width: 90%;
-
 }
 
 .signup {
 	background-color: #f9e42e;
-	height: 90px;
+	padding: 10px;
 	margin: 0 auto;
 	width: 1024px;
 	max-width: 90%;
+
 }
 
 section h1 {
-	color: #f0efef;
+	color: #ffffff;
 	font-weight: extra bold
 }
-#button_one {
+#cta_yellow {
 	border: none;
 	border-radius: 5px;
-	text-decoration: none;
-	font-weight: bold;
+	font-weight: 800;
 	background-color: #f9e52e;
 	text-align: center;
 	padding: 7px 50px;
-	margin: 3% 40%;
+	display: block;
+  	margin: 0 auto;
+  	width: 280px;
 }
 
-#button_two {
+#cta_blue {
 	border: none;
 	border-radius: 5px;
-	text-decoration: none;
-	font-weight: bold;
+	font-weight: 800;
 	background-color: #033048;
 	text-align: center;
 	padding: 7px 50px;
-	margin: 3% 40%;
+	display: block;
+  	margin: 0 auto;
 	color: white;
+	width: 280px;
 }
 
 
@@ -140,7 +153,7 @@ h3 {
 	font-weight: 600;
 	color: #606161;
 }
-ul {
+ul #benefits {
 	font-weight: 300;
 	color: #606161;
 	margin: 20px 5%;
@@ -150,14 +163,15 @@ ul {
 #benefits {
  	font-weight:300;
  	color: #606161;
- 	margin: 20px 7%;
-}
+ 	}
 
 #testimonial {
+
 	font-weight: 300;
  	font-style: italic;
  	color: #fff;
   	margin: 60px 30%;
+  	text-align: center;
 }
 .name {
 	font-weight: 600;
@@ -182,7 +196,85 @@ footer p {
 	
 }
 
+footer {
+	height: 200px;
+	background-color: #121212;
+	margin: 0 auto;
+	width: 1024px;
+	max-width: 90%;
+	text-align: center
+}
 
+
+.blog_page {
+	background-color: #033048;
+	max-width: 90%;
+	margin: 0 auto;
+	width: 1024px;
+	}
+
+nav {
+	float: right;
+}
+
+nav li {
+	display: inline;
+}
+
+main {
+	width: 1024px;
+	max-width: 90%;
+	background-color: #f0efef;
+	margin: 0 auto;
+	}
+
+
+
+img {
+	max-width:100%;
+}
+
+
+h4 {
+	color: #033048;
+	font-size: 26px;
+	font-weight: 400;
+}
+
+#top_nav a {
+	color:  #f9e42e;
+	padding: 10px;
+}
+
+.post_text{
+	color: #033048;
+	font-weight: 300;
+}
+
+
+.post_text::first-letter {
+  font-weight: bold;
+  color: #033048;
+  font-size: 40px;
+  
+}
+
+#blog_title{
+	color: #033048;
+}
+
+.blog_link{
+	color: #f9e52e;
+	margin-left: 800px;
+
+}
+
+.blog_cta {
+	text-align: right;
+
+}
+
+::first-letter 
 
 
 
